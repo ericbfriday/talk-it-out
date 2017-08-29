@@ -7,7 +7,8 @@
 
 3. Add a string with a value of 11 to `majorKey`
 
-4. Create an array named `keyChars`, then loop through `majorKey` using the `charAt` method and set `keyChars[i]` to each value
+4. Create an array named `keyChars`, then loop through `majorKey` using the `charAt` method and set 
+`keyChars[i]` to each value
 
 5. Remove the first and last values from `keyChars`
 
@@ -35,3 +36,73 @@ is more than one character in the string. Return `val` and set `majorKey` to the
 
 15. Your answer should be a string value that equals 7. Is that what you got?
 */
+
+// 1. 
+var majorKey = 42;
+console.log(majorKey);
+
+
+// 2. 
+if (majorKey >= 53) {
+    majorKey += 42;
+} else {
+    majorKey -= 13;
+}
+console.log(majorKey);
+
+// 3.
+majorKey += '11';
+
+// 4.
+var keyChars = [];
+
+for (i = 0; i < majorKey.length ; i++) {
+    keyChars[i] = majorKey.charAt(i);
+};
+
+console.log(keyChars);
+
+// 5. 
+keyChars.shift(0);
+keyChars.pop(keyChars.length - 1);
+console.log(keyChars);
+
+// 6.
+console.log('showing step 6:');
+
+var reverseKeyChars = [];
+for (var i = keyChars.length - 1 ; i >= 0 ; i --) {
+    reverseKeyChars.push(keyChars[i]);
+    console.log([i])
+};
+
+var reverseKeyChars = reverseKeyChars.join('');
+
+console.log('showing reverseKeyChars:');
+console.log(reverseKeyChars);
+
+// 7.
+console.log('showing step 7:');
+
+for (i = 0; i <= majorKey.length - 1 ; i++) {
+    parseInt(majorKey[i]);
+//    console.log([i])
+};
+
+for (i = 0; i <= reverseKeyChars.length - 1 ; i++) {
+    parseInt(reverseKeyChars[i]);
+//   console.log([i])
+};
+console.log(reverseKeyChars);
+
+var reverseKeyChars = parseInt(reverseKeyChars);
+var majorKey = parseInt(majorKey);
+// Note to self on 7 - we forgot to declare variables for unning parseInt
+
+
+// 8. (switched)
+
+majorKey += reverseKeyChars;
+console.log(majorKey)
+
+// 9. 
