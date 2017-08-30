@@ -131,7 +131,7 @@ console.log(majorKey);
 function myFunction(val) {
     var cake = val.toString();
     console.log('logging string ' + cake);
-    if (val.length > 1) {
+    if (cake.length > 1) {
         console.log('long enough');
         var cake = val.substring(1);
         console.log('Logging substringed val');
@@ -139,25 +139,24 @@ function myFunction(val) {
         return cake;
     }
 }
-*/
 
+ */
 function myFunction(val){
     var cake = val.toString();
+    console.log('Is it a string?');
     console.log(cake);
         if (cake.length > 1) {
             console.log('string is long enough');
             var cake = cake.substring(1);
+            console.log('Did we remove the first digit?');
             console.log(cake);
             return cake;
         }
-    var cake = majorKey;
 }
-
-var majorKey = myFunction(majorKey);
 
 // 12. 
 
-
+var majorKey = myFunction(majorKey);
 
 // 13.
 console.log('final call - Step 13:');
