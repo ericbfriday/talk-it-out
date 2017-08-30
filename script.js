@@ -58,7 +58,7 @@ var keyChars = [];
 
 for (i = 0; i < majorKey.length ; i++) {
     keyChars[i] = majorKey.charAt(i);
-};
+}
 
 console.log(keyChars);
 
@@ -73,8 +73,8 @@ console.log('showing step 6:');
 var reverseKeyChars = [];
 for (var i = keyChars.length - 1 ; i >= 0 ; i --) {
     reverseKeyChars.push(keyChars[i]);
-    console.log([i])
-};
+    console.log([i]);
+}
 
 var reverseKeyChars = reverseKeyChars.join('');
 
@@ -87,12 +87,12 @@ console.log('showing step 7:');
 for (i = 0; i <= majorKey.length - 1 ; i++) {
     parseInt(majorKey[i]);
 //    console.log([i])
-};
+}
 
 for (i = 0; i <= reverseKeyChars.length - 1 ; i++) {
     parseInt(reverseKeyChars[i]);
 //   console.log([i])
-};
+}
 console.log(reverseKeyChars);
 
 var reverseKeyChars = parseInt(reverseKeyChars);
@@ -103,7 +103,7 @@ var majorKey = parseInt(majorKey);
 // 8. (switched)
 
 majorKey += reverseKeyChars;
-console.log(majorKey)
+console.log(majorKey);
 
 // 9. 
 if (majorKey < 60) {
@@ -127,28 +127,39 @@ while (counter > 0) {
 console.log(majorKey);
 
 // 11.
-/** Function is not working
+/**
 function myFunction(val) {
-    var val = val.toString();
-    console.log(val);
+    var cake = val.toString();
+    console.log('logging string ' + cake);
     if (val.length > 1) {
         console.log('long enough');
-        var val = val.slice(1);
-        console.log(val);
-        return val;
-    }
-    else {
-        return val;
+        var cake = val.substring(1);
+        console.log('Logging substringed val');
+        console.log(cake);
+        return cake;
     }
 }
 */
 
-var majorKey = val;
+function myFunction(val){
+    var cake = val.toString();
+    console.log(cake);
+        if (cake.length > 1) {
+            console.log('string is long enough');
+            var cake = cake.substring(1);
+            console.log(cake);
+            return cake;
+        }
+    var cake = majorKey;
+}
+
+var majorKey = myFunction(majorKey);
 
 // 12. 
 
-myFunction(majorKey);
+
 
 // 13.
+console.log('final call - Step 13:');
 
 console.log(majorKey);
