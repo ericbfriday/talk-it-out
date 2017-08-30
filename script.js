@@ -106,3 +106,49 @@ majorKey += reverseKeyChars;
 console.log(majorKey)
 
 // 9. 
+if (majorKey < 60) {
+    majorKey = 14;
+} // end if
+else if (majorKey === 2930) {
+    majorKey = 27;
+} // end else if
+else {
+    majorKey = 2;
+}
+console.log(majorKey);
+
+// 10.
+
+var counter = 10;
+while (counter > 0) {
+    majorKey = majorKey - 1;
+    counter = counter - 1;
+}
+console.log(majorKey);
+
+// 11.
+/** Function is not working
+function myFunction(val) {
+    var val = val.toString();
+    console.log(val);
+    if (val.length > 1) {
+        console.log('long enough');
+        var val = val.slice(1);
+        console.log(val);
+        return val;
+    }
+    else {
+        return val;
+    }
+}
+*/
+
+var majorKey = val;
+
+// 12. 
+
+myFunction(majorKey);
+
+// 13.
+
+console.log(majorKey);
